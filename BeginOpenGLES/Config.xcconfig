@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  BeginOpenGLES
+//
+//  Created by Gocy on 2019/8/15.
+//  Copyright © 2019 Gocy. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+GCC_PREPROCESSOR_DEFINITIONS = GLES_SILENCE_DEPRECATION=1 $(inherited);
+
