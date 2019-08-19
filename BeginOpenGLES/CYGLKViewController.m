@@ -105,8 +105,8 @@ const GLubyte Indices[] = {
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-    glClearColor(_curRed, 0, 0, 1);
-    glClear(GL_COLOR_BUFFER_BIT);
+//    glClearColor(_curRed, 0, 0, 1);
+//    glClear(GL_COLOR_BUFFER_BIT);
     
     [self.effect prepareToDraw];
     

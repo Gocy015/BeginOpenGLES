@@ -15,10 +15,18 @@
 		C3206CA523055BD100C4E9F6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3206CA423055BD100C4E9F6 /* OpenGLES.framework */; };
 		C3206CA723055BFA00C4E9F6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3206CA623055BFA00C4E9F6 /* GLKit.framework */; };
 		C3206CA923055C7600C4E9F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3206CA823055C7600C4E9F6 /* QuartzCore.framework */; };
+		C33670E1230A417600D78843 /* ShineShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C33670E0230A417600D78843 /* ShineShader.vsh */; };
+		C33670E3230A418B00D78843 /* ShineShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C33670E2230A418B00D78843 /* ShineShader.fsh */; };
+		C33670E5230A8D0000D78843 /* ScaleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C33670E4230A8D0000D78843 /* ScaleShader.vsh */; };
+		C33670E7230A8D1300D78843 /* ScaleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C33670E6230A8D1300D78843 /* ScaleShader.fsh */; };
+		C33670EA230AAABC00D78843 /* SpiritShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C33670E8230AAABB00D78843 /* SpiritShader.fsh */; };
+		C33670EB230AAABC00D78843 /* SpiritShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C33670E9230AAABB00D78843 /* SpiritShader.vsh */; };
 		C355496423064006008B25D3 /* CYTextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C355496323064006008B25D3 /* CYTextureViewController.m */; };
 		C355496723069292008B25D3 /* CYRawTextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C355496623069292008B25D3 /* CYRawTextureViewController.m */; };
 		C355496A230692DB008B25D3 /* CommonShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C3554969230692DB008B25D3 /* CommonShader.vsh */; };
 		C355496C230692EF008B25D3 /* CommonShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C355496B230692EF008B25D3 /* CommonShader.fsh */; };
+		C3D952942307F2CE00452EB0 /* CYEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D952932307F2CE00452EB0 /* CYEffectViewController.m */; };
+		C3D952972307F33600452EB0 /* CYOpenGLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D952962307F33600452EB0 /* CYOpenGLTools.m */; };
 		C3E2F482230577B500537E80 /* CYGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E2F481230577B500537E80 /* CYGLKViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +43,22 @@
 		C3206CA623055BFA00C4E9F6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		C3206CA823055C7600C4E9F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C3206CAA230566CC00C4E9F6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C33670E0230A417600D78843 /* ShineShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShineShader.vsh; sourceTree = "<group>"; };
+		C33670E2230A418B00D78843 /* ShineShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ShineShader.fsh; sourceTree = "<group>"; };
+		C33670E4230A8D0000D78843 /* ScaleShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScaleShader.vsh; sourceTree = "<group>"; };
+		C33670E6230A8D1300D78843 /* ScaleShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScaleShader.fsh; sourceTree = "<group>"; };
+		C33670E8230AAABB00D78843 /* SpiritShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SpiritShader.fsh; sourceTree = "<group>"; };
+		C33670E9230AAABB00D78843 /* SpiritShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SpiritShader.vsh; sourceTree = "<group>"; };
 		C355496223064006008B25D3 /* CYTextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTextureViewController.h; sourceTree = "<group>"; };
 		C355496323064006008B25D3 /* CYTextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTextureViewController.m; sourceTree = "<group>"; };
 		C355496523069292008B25D3 /* CYRawTextureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRawTextureViewController.h; sourceTree = "<group>"; };
 		C355496623069292008B25D3 /* CYRawTextureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYRawTextureViewController.m; sourceTree = "<group>"; };
 		C3554969230692DB008B25D3 /* CommonShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CommonShader.vsh; sourceTree = "<group>"; };
 		C355496B230692EF008B25D3 /* CommonShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CommonShader.fsh; sourceTree = "<group>"; };
+		C3D952922307F2CE00452EB0 /* CYEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYEffectViewController.h; sourceTree = "<group>"; };
+		C3D952932307F2CE00452EB0 /* CYEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYEffectViewController.m; sourceTree = "<group>"; };
+		C3D952952307F33600452EB0 /* CYOpenGLTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYOpenGLTools.h; sourceTree = "<group>"; };
+		C3D952962307F33600452EB0 /* CYOpenGLTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYOpenGLTools.m; sourceTree = "<group>"; };
 		C3E2F480230577B500537E80 /* CYGLKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYGLKViewController.h; sourceTree = "<group>"; };
 		C3E2F481230577B500537E80 /* CYGLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYGLKViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +112,10 @@
 				C355496323064006008B25D3 /* CYTextureViewController.m */,
 				C355496523069292008B25D3 /* CYRawTextureViewController.h */,
 				C355496623069292008B25D3 /* CYRawTextureViewController.m */,
+				C3D952922307F2CE00452EB0 /* CYEffectViewController.h */,
+				C3D952932307F2CE00452EB0 /* CYEffectViewController.m */,
+				C3D952952307F33600452EB0 /* CYOpenGLTools.h */,
+				C3D952962307F33600452EB0 /* CYOpenGLTools.m */,
 			);
 			path = BeginOpenGLES;
 			sourceTree = "<group>";
@@ -111,8 +133,14 @@
 		C35549682306929B008B25D3 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
+				C33670E8230AAABB00D78843 /* SpiritShader.fsh */,
+				C33670E9230AAABB00D78843 /* SpiritShader.vsh */,
 				C3554969230692DB008B25D3 /* CommonShader.vsh */,
 				C355496B230692EF008B25D3 /* CommonShader.fsh */,
+				C33670E0230A417600D78843 /* ShineShader.vsh */,
+				C33670E2230A418B00D78843 /* ShineShader.fsh */,
+				C33670E4230A8D0000D78843 /* ScaleShader.vsh */,
+				C33670E6230A8D1300D78843 /* ScaleShader.fsh */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -176,9 +204,15 @@
 			files = (
 				C355496A230692DB008B25D3 /* CommonShader.vsh in Resources */,
 				C355496C230692EF008B25D3 /* CommonShader.fsh in Resources */,
+				C33670E7230A8D1300D78843 /* ScaleShader.fsh in Resources */,
+				C33670EB230AAABC00D78843 /* SpiritShader.vsh in Resources */,
+				C33670E3230A418B00D78843 /* ShineShader.fsh in Resources */,
 				C3206C9A23055BBC00C4E9F6 /* LaunchScreen.storyboard in Resources */,
 				C3206C9723055BBC00C4E9F6 /* Assets.xcassets in Resources */,
+				C33670E5230A8D0000D78843 /* ScaleShader.vsh in Resources */,
+				C33670E1230A417600D78843 /* ShineShader.vsh in Resources */,
 				C3206C9523055BBA00C4E9F6 /* Main.storyboard in Resources */,
+				C33670EA230AAABC00D78843 /* SpiritShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,10 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E2F482230577B500537E80 /* CYGLKViewController.m in Sources */,
+				C3D952972307F33600452EB0 /* CYOpenGLTools.m in Sources */,
 				C3206C9D23055BBC00C4E9F6 /* main.m in Sources */,
 				C3206C8F23055BBA00C4E9F6 /* AppDelegate.m in Sources */,
 				C355496723069292008B25D3 /* CYRawTextureViewController.m in Sources */,
 				C355496423064006008B25D3 /* CYTextureViewController.m in Sources */,
+				C3D952942307F2CE00452EB0 /* CYEffectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

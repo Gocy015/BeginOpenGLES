@@ -41,7 +41,7 @@ const SceneVertex SceneVertices[] = {
     
     CGSize screenSize = UIScreen.mainScreen.bounds.size;
     CAEAGLLayer *renderLayer = [CAEAGLLayer new];
-    renderLayer.frame = CGRectMake(0, 100, screenSize.width, screenSize.width);
+    renderLayer.frame = CGRectMake(0, 100, screenSize.width, screenSize.width/0.8);
     renderLayer.contentsScale = UIScreen.mainScreen.scale;
     
     [self.view.layer addSublayer:renderLayer];
@@ -51,7 +51,19 @@ const SceneVertex SceneVertices[] = {
     
     GLuint textureID = [self textureFromImage:image];
     
-    glViewport(0, 0, [self drawableWidth], [self drawableHeight]);
+    CGSize maxSize = CGSizeMake([self drawableWidth], [self drawableHeight]);
+    CGSize drawSize = image.size;
+    CGFloat widthRatio = image.size.width / maxSize.width;
+    CGFloat heightRatio = image.size.height / maxSize.height;
+    
+    CGFloat ratio = MAX(widthRatio, heightRatio);
+    if (ratio > 1) {
+        drawSize = CGSizeMake(floor(drawSize.width / ratio), floor(drawSize.height / ratio));
+    }
+    CGRect drawRect = CGRectMake(((maxSize.width-drawSize.width)/2), ((maxSize.height-drawSize.height)/2), drawSize.width, drawSize.height);
+    NSLog(@"%@", NSStringFromCGRect(drawRect));
+    
+    glViewport(((maxSize.width-drawSize.width)/2), ((maxSize.height-drawSize.height)/2), drawSize.width, drawSize.height);
     
     GLuint program = [self programWithShader:@"CommonShader"];
     
@@ -125,7 +137,7 @@ const SceneVertex SceneVertices[] = {
     // get texture
     GLuint textureID;
     glGenTextures(1, &textureID);
-    glBindBuffer(GL_TEXTURE_2D, textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, imageData);
     
     // mapping, texture -> pixel
